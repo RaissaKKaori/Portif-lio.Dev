@@ -13,6 +13,7 @@ body {
 
 .header {
     position: fixed;
+    flex-wrap: wrap;
     top: 0;
     left: -0;
     width: 100%;
@@ -30,7 +31,7 @@ body {
     font-weight: 600;
 }
 
-.naviagr a {
+.navBar a {
     align-items: center;
     font-size: 15px;
     color: #ededed;
@@ -40,8 +41,8 @@ body {
     transition: .3s;
 }
 
-.naviagr a:hover,
-.naviagr a.active {
+.navBar a:hover,
+.navBar a.active {
     color: #5c8da5;
 }
 
