@@ -11,7 +11,7 @@ body {
     background-color: #1c282e;
 }
 
-.header {
+.header{
     position: fixed;
     flex-wrap: wrap;
     top: 0;
@@ -19,9 +19,17 @@ body {
     width: 100%;
     padding: 2%;
     background: transparent;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+}
+
+.navBar, ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
 }
 
 .logo {
@@ -30,15 +38,31 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+@media(min-width:700px){
+.menu, i#burger{
+    display: none;
+    padding: 20px;
+    font-weight: 600px;
+}
+}
 
-.navBar a {
+@media(max-width: 700px){
+.menu,li{
+    display: none;
+}
+.i#burger{
+    display: contents;
+}
+}
+
+.navBar a,i{
     align-items: center;
     font-size: 15px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
     transition: .3s;
+    cursor: pointer;
 }
 
 .navBar a:hover,
@@ -60,7 +84,6 @@ body {
     text-decoration: none;
     max-width: 700px;
     line-height: 1.2;
-    display: block;
     margin-bottom: 20px;
 }
 
@@ -126,6 +149,12 @@ body {
 
 .skils{
     font-size: 20px;
+}
+
+.linguagens{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .imagem {
