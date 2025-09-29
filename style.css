@@ -57,7 +57,7 @@ body {
 
 .navBar a,i{
     align-items: center;
-    font-size: 15px;
+    font-size: 16px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
@@ -70,6 +70,11 @@ body {
     color: #5c8da5;
 }
 
+.navBar a#copia_email,a#copia_zap{
+    display: none;
+    cursor: pointer;
+}
+
 .home {
     height: 100vh;
     display: flex;
@@ -79,7 +84,7 @@ body {
 }
 
 .home-content {
-    font-size: 17px;
+    font-size: 18px;
     color: #ededed;
     text-decoration: none;
     max-width: 700px;
@@ -144,7 +149,7 @@ body {
     color: #ededed;
     justify-content: center; 
     align-items: center;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .skils{
